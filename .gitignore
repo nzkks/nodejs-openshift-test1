@@ -1,7 +1,9 @@
+apply-gitignore = !git ls-files -ci --exclude-standard -z | xargs -0r git rm --cached
+
 # old files
 index_old.html
 server_old.js
-
+deplist.txt
 
 # Logs
 logs
@@ -34,6 +36,7 @@ build/Release
 # Dependency directories
 node_modules
 jspm_packages
+.openshift
 
 # Optional npm cache directory
 .npm
