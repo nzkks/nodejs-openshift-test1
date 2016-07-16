@@ -1,22 +1,17 @@
 {
-  "name": "OpenShift-Sample-App",
+  "name": "drmsweb",
   "version": "1.0.0",
-  "description": "OpenShift Sample Application",
-  "keywords": [
-    "OpenShift",
-    "Node.js",
-    "application",
-    "openshift"
-  ],
+  "description": "DRMSWeb.com website",
+  "keywords": [],
   "author": {
-    "name": "OpenShift",
-    "email": "ramr@example.org",
-    "url": "http://www.openshift.com/"
+    "name": "Shanthosh Krishnakumar",
+    "email": "kkshanthosh@gmail.com",
+    "url": "http://www.drmsweb.com/"
   },
-  "homepage": "http://www.openshift.com/",
+  "homepage": "http://www.drmsweb.com/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/openshift/origin-server"
+    "url": "https://github.com/nzkks/node-openshift-test"
   },
 
   "engines": {

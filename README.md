@@ -1,3 +1,3 @@
-The OpenShift `nodejs` cartridge documentation can be found at:
+# DRMSWebApp
 
-http://openshift.github.io/documentation/oo_cartridge_guide.html#nodejs
+Just testing nodejs in RedHat OpenShift. Once completed successfully, the same will become www.drmsweb.com website.
