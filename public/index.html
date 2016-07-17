@@ -11,10 +11,10 @@
 </head>
 <body ng-controller="DRMSWebController">
   <h1>{{ title }}</h1>
-  <div ng-controller="technicalSkillsController">
-      <ul ng-repeat="technicalSkill in technicalSkills">
-        <li>{{technicalSkill.name}} : 
-          <span ng-repeat="skill in technicalSkill.skills">{{skill.name}}, </span>
+  <div ng-controller="techSkillsController">
+      <ul ng-repeat="techskill in techskills">
+        <li>{{techskill.name}} : 
+          <span ng-repeat="skill in techskill.skills">{{skill.name}}, </span>
       </li>
     </ul>
   </div>
