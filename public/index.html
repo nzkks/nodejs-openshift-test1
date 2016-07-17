@@ -15,6 +15,7 @@
       <ul ng-repeat="techskill in techskills">
         <li>{{techskill.name}} : 
           <span ng-repeat="skill in techskill.skills">{{skill.name}}, </span>
+          <span><a href="" ng-click="remove($index)">Delete</a></span>
       </li>
     </ul>
   </div>

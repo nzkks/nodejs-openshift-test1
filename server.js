@@ -16,9 +16,16 @@ var techskills = [
     app.get('/api/techskills', function(req, res){
       res.json(techskills);
     });
+    
     app.get('/api/techskills/:index', function(req, res){
       res.json(techskills[req.params.index]);
     });
+
+    app.delete('/api/techskills/:index', function(req, res){
+      techskills.splice(req.params.index, 1);
+      res.json(techskills);
+    });
+
 
 app.use(express.static(__dirname + '/public'));
 
