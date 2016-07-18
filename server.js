@@ -1,5 +1,11 @@
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser');
+var multer = require('multer');
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(multer());
 
 var techskills = [
       { name: "Primary Web Languages", skills: [{ name: "HTML5"}, {name: "CSS3"}, {name: "SASS/SCSS"}, {name: "JavaScript"}, {name: "Jade"}]},
@@ -16,13 +22,19 @@ var techskills = [
     app.get('/api/techskills', function(req, res){
       res.json(techskills);
     });
-    
+
     app.get('/api/techskills/:index', function(req, res){
       res.json(techskills[req.params.index]);
     });
 
     app.delete('/api/techskills/:index', function(req, res){
       techskills.splice(req.params.index, 1);
+      res.json(techskills);
+    });
+
+    app.post('/api/techskills', function(req, res){
+      var newTechSkill = req.body;
+      techskills.push(newTechSkill);
       res.json(techskills);
     });
 
