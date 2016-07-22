@@ -8,15 +8,15 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(multer());
 
 var techskills = [
-      { name: "Primary Web Languages", skills: [{ name: "HTML5"}, {name: "CSS3"}, {name: "SASS/SCSS"}, {name: "JavaScript"}, {name: "Jade"}]},
-      { name: "Frontend Frameworks", skills: [{ name: "Bootstrap"}, {name: "Zurb Foundation"}, {name: "Bourbon/Neat/Refills"}, {name: "Jekyll"}]},
-      { name: "JavaScript Libraries & Templates", skills: [{ name: "Angular.js"}, {name: "jQuery"}, {name: "Webpack.js"}, {name: "Grunt.js"}, {name: "Bower.js"}, {name: "GSAP"}]},
-      { name: "Databases & Data Languages", skills: [{ name: "SQL"}, {name: "XML"}, {name: "JSON"}, {name: "MS SQL Server"}, {name: "MySql (WordPress)"}]},
-      { name: "Web Testing Tools", skills: [{ name: "Chrome Developer Tools"}, {name: "Firebug"}, {name: "jshint"}, {name: "W3C"}, {name: "Webaim Wave"}, {name: "UITest.com"}, {name: "GTMetrix"}, {name: "Pingdom"}]},
-      { name: "Web Analysis Tools", skills: [{ name: "Google Analytics"}, {name: "AdWords"}, {name: "Webmaster Tools"}, {name: "MOZ"}]},
-      { name: "Content Management Systems", skills: [{ name: "WordPress"}, {name: "Umbraco CMS"}, {name: "Joomla"}]},
-      { name: "Design Tools", skills: [{ name: "Adobe CC (Photoshop, Illustrator, InDesign, Premiere)"}]},
-      { name: "Platforms & Version Control", skills: [{ name: "Windows"}, {name: "Mac"}, {name: "Ubuntu"}, {name: "Git"}]}
+      { catName: "Primary Web Languages", skills: [{ skillName: "HTML5"}, {skillName: "CSS3"}, {skillName: "SASS/SCSS"}, {skillName: "JavaScript"}, {skillName: "Jade"}]},
+      { catName: "Frontend Frameworks", skills: [{ skillName: "Bootstrap"}, {skillName: "Zurb Foundation"}, {skillName: "Bourbon/Neat/Refills"}, {skillName: "Jekyll"}]},
+      { catName: "JavaScript Libraries & Templates", skills: [{ skillName: "Angular.js"}, {skillName: "jQuery"}, {skillName: "Webpack.js"}, {skillName: "Grunt.js"}, {skillName: "Bower.js"}, {skillName: "GSAP"}]},
+      { catName: "Databases & Data Languages", skills: [{ skillName: "SQL"}, {skillName: "XML"}, {skillName: "JSON"}, {skillName: "MS SQL Server"}, {skillName: "MySql (WordPress)"}]},
+      { catName: "Web Testing Tools", skills: [{ skillName: "Chrome Developer Tools"}, {skillName: "Firebug"}, {skillName: "jshint"}, {skillName: "W3C"}, {skillName: "Webaim Wave"}, {skillName: "UITest.com"}, {skillName: "GTMetrix"}, {skillName: "Pingdom"}]},
+      { catName: "Web Analysis Tools", skills: [{ skillName: "Google Analytics"}, {skillName: "AdWords"}, {skillName: "Webmaster Tools"}, {skillName: "MOZ"}]},
+      { catName: "Content Management Systems", skills: [{ skillName: "WordPress"}, {skillName: "Umbraco CMS"}, {skillName: "Joomla"}]},
+      { catName: "Design Tools", skills: [{ skillName: "Adobe CC (Photoshop, Illustrator, InDesign, Premiere)"}]},
+      { catName: "Platforms & Version Control", skills: [{ skillName: "Windows"}, {skillName: "Mac"}, {skillName: "Ubuntu"}, {skillName: "Git"}]}
     ];
 
     app.get('/api/techskills', function(req, res){

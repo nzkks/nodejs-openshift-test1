@@ -10,6 +10,14 @@ app.controller("DRMSWebController", function($scope){
     $scope.techskills = response;
   });
 
+  $scope.add = function(tskill){
+
+    $http.post('/api/techskills', tskill)
+    .success(function(response){
+      $scope.techskills = response;
+    });
+  };
+
   $scope.remove = function(index){
     $http.delete('/api/techskills/' + index)
     .success(function(response){
