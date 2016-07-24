@@ -1,10 +1,10 @@
 var app = angular.module("DRMSWebApp", []);
 
 app.controller("DRMSWebController", function($scope){
-  $scope.title = "DRMSWeb website";
+  $scope.title = "DRMS website Editor";
 })
 .controller("techSkillsController", function($scope, $http){
-  
+
   $http.get("/api/techskills")
   .success(function(response){
     $scope.techskills = response;
